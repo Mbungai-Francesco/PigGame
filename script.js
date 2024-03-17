@@ -33,6 +33,7 @@ const switchPlayers = () =>{
     playerCurrent.textContent = 0
     if(Number(playerScore.textContent) >= 100){
       won = true
+      player.querySelector('h2').textContent = 'Winner!!'
       player.classList.add('player--winner')
     }
     else{
